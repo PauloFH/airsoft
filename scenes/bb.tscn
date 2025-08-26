@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgo7b87fc1wax"]
+
+[ext_resource type="Script" uid="uid://dh58htq2udstq" path="res://scenes/bb.gd" id="1_57aba"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qickv"]
+radius = 0.003
+
+[sub_resource type="SphereMesh" id="SphereMesh_qickv"]
+radial_segments = 65
+
+[node name="BB" type="RigidBody3D"]
+mass = 0.002
+linear_velocity = Vector3(0, 0, 121)
+script = ExtResource("1_57aba")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_qickv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_qickv")
