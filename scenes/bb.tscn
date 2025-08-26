@@ -10,7 +10,6 @@ radial_segments = 65
 
 [node name="BB" type="RigidBody3D"]
 mass = 0.002
-gravity_scale = 0.0
 linear_velocity = Vector3(0, 0, 121)
 script = ExtResource("1_57aba")
 

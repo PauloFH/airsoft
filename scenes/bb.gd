@@ -7,5 +7,3 @@ func _process(delta: float) -> void:
 	#linear_velocity.y += lerp(linear_velocity.y, new_force, delta*5)
 	linear_velocity.y += backdrag
 	backdrag -= 0.1
-	linear_velocity.y -= 9.8 # gravidade
-	pass
