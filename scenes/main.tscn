@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://dtor8o4rtgyxr"]
+[gd_scene load_steps=2 format=3 uid="uid://dtor8o4rtgyxr"]
 
 [ext_resource type="PackedScene" uid="uid://bciu23ci4d6fx" path="res://scenes/gun.tscn" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://cgo7b87fc1wax" path="res://scenes/bb.tscn" id="2_0wfyh"]
 
 [node name="Main" type="Node3D"]
 
@@ -9,11 +8,7 @@
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -32.1219, 1.71718, 31.1952)
 
 [node name="Gun" parent="." instance=ExtResource("1_o5qli")]
-transform = Transform3D(-0.0578996, 0, -5.06174e-09, 0, 0.0578996, 0, 5.06174e-09, 0, -0.0578996, 0, 0, 0)
-
-[node name="BB" parent="." instance=ExtResource("2_0wfyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0113941, 2.22573, 7.10804)
-mass = 0.02
+transform = Transform3D(-0.0578996, 0, -5.06174e-09, 0, 0.0578996, 0, 5.06174e-09, 0, -0.0578996, 0, 0, -118.502)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.835107, 0.0727526, -0.545255, 0.550087, -0.110448, 0.827771, 0, -0.991216, -0.132256, -12.4064, 19.3829, -1.33917)
